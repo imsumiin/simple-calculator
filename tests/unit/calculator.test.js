@@ -1,4 +1,4 @@
-import { add } from "../../src/calculator.js";
+import { add, subtract } from "../../src/calculator.js";
 
 describe("add", () => {
 
@@ -10,4 +10,11 @@ describe("add", () => {
         expect(add(-1, 1)).toBe(0);
     });
 
+});
+test('10 - 3 = 7', () => {
+    expect(subtract(10, 3)).toBe(7);
+});
+
+test('-1 - 1 = -2', () => {
+    expect(subtract(-1, 1)).toBe(-2);
 });

@@ -2,9 +2,14 @@ export function add(a, b) {
     return a + b;
 }
 
+export function subtract(a, b) {
+    return a - b;
+}
+
 export function calculate(operator, a, b) {
     const ops = {
-        add
+        add,
+        subtract
     };
 
     const fn = ops[operator];
